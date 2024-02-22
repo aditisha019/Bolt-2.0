@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>Contact us</title>
+        <style>
+            *{
+                padding:0px;
+                margin:0px;
+                font-family: Tahoma, sans-serif;
+                box-sizing:border-box;
+            }
+         .header{
+            display: flex;
+            width:100%;
+            height:14%;
+            position:absolute;
+            top:0%;
+            border-bottom:1px solid black;
+            font-size: 20px;
+            background-color: #fff;
+         }
+         .heading{
+            padding:0px;
+            margin:0px;
+            position:absolute;
+            top:0%;
+            left:6%;
+         }
+         .navbar{
+            position:absolute;
+            left:200%;
+            top:45%;
+            text-decoration: none;
+            color:seagreen;
+         }
+         a.link,a.hover,a.visited,a.active{
+            color:seagreen;
+            font-weight: bold;
+         }
+         #nav1{
+               position:absolute;
+               left:310%;
+               top:45%;
+               width:100px;
+         }
+         #nav2{
+               position:absolute;
+               left:450%;
+               top:45%;
+               width:100px;
+         }
+         #nav3{
+               position:absolute;
+               left:590%;
+               top:45%;
+               width:100px;
+         }
+         #nav4{
+               position:absolute;
+               left:690%;
+               top:45%;
+               width:100px;
+         }
+            body{
+                background-image:url('bgimg.jpg') ;
+            }
+            .contact-container{
+                position:absolute;
+                left:20%;
+                top:75%;
+                height:80vh;
+                display:flex;
+                align-items:center;
+                justify-content:space-evenly;
+            }
+            .contact-left{
+                display:flex;
+                flex-direction:column;
+                align-items:start;
+                gap:10px;
+            }
+            .contact-left-title{
+                font-weight:600;
+                font-size:30px;
+                margin-bottom:5px;
+            }
+            .contact-left-title hr{
+                border:none;
+                width:120px;
+                height:5px;
+                border-radius:10px;
+                margin-bottom:20px;
+            }
+            .contact-inputs{
+                width:400px;
+                height:50px;
+                border:none;
+                outline:none;
+                padding-left:25px;
+                font-weight:500;
+                color:#666;
+                border-radius:50px;
+            }
+            .contact-left textarea{
+                height:140px;
+                padding-top:15px;
+                border-radius:20px;
+            }
+            .contact-inputs:focus{
+                border: 2px solid black;
+            }
+            .contact-inputs::placeholder{
+                color:#a9a9a9;
+            }
+            .contact-left button{
+                display:flex;
+                align-items:center;
+                padding:15px;
+                border:none;
+                border-radius:50px;
+                cursor:pointer;
+            }
+            @media (max-width:800px){
+                .contact-inputs{
+                    width:80vw;
+                }
+            }
+            .footer{
+                position:absolute;
+                left:2%;
+                top:99%;
+                display:flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="logo.png" alt="logo" width="85px" height="85px">
+            <div class="heading">
+            <p style="font-size:50px"><b>HealEd</b></p>
+            <p style="color:seagreen ">Health Education</p>
+            <div style="width:fit-content">
+                
+                  
+                  <a href="home1.html" class="navbar" id="nav1" style="width:max-content">Physical Health</a>
+                  <a href="mentalhealth.html" class="navbar" id="nav2" style="width:max-content">Mental Health</a>
+                  <a href="aboutus.html" class="navbar" id="nav3" style="width:max-content">About Us</a>
+                  <a href="main.html" class="navbar">Home</a>
+                  <a href="contactus.html" class="navbar" id="nav4" style="width:max-content"><b>Contact Us</b></a>
+                  
+            </div>
+            <div class="contact">
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="bd2f2791-71a9-4b87-a197-478526ceb5eb">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
+                
+            </form>
+            <div class="footer">
+               <p> <b>Mobile:</b>1234567890 </p>
+               <p style="margin-left:200px;"><b>Email:</b>healed@gmail.com</p> 
+               <p style="margin-left:200px;"><b>Insta:</b>@healed</p>    
+               <p style="margin-left:200px;"><b>Fb:</b>@healed</p>
+
+        </div>
+    </div>
+    </body>
+</html>
