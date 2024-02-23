@@ -61,38 +61,47 @@
                top:45%;
                width:100px;
          }
-        body{
-            background-color: #68becd;
-        }.anc{
+        
+        .anc{
             color:black;
             text-decoration: none;
             transition: 0.5s;
         }
         .anc:hover{
             
-            padding-left: 30px;
+            margin-left: 30px;
             text-shadow: 0 0 10px;
+            background-color: beige;
         }
-        
+        .container-fluid {
+         display: flex;
+         width: 100%;
+         height: 14%;
+         position: absolute;
+         top: 0%;
+         border-bottom: 1px solid black;
+         font-size: 20px;
+      }
         </style>
     </head>
     <body>
-        <div class="header">
-            <img src="logo.png" alt="logo" width="85px" height="85px">
-            <div class="heading">
-            <p style="font-size:50px"><b>HealEd</b></p>
-            <p style="color:seagreen ">Health Education</p>
-            <div style="width:fit-content">
-                
-                <a href="main.html" class="navbar">Home</a>
-                  <a href="home1.html" class="navbar" id="nav1" style="width:max-content">Physical Health</a>
-                  <a href="mentalhealth.html" class="navbar" id="nav2" style="width:max-content"><b>Mental Health</b></a>
-                  <a href="aboutus.html" class="navbar" id="nav3" style="width:max-content">About Us</a>
-                  <a href="contactus.html" class="navbar" id="nav4" style="width:max-content">Contact Us</a>
-                  
+        <header>
+            <div class="container-fluid" style="border-bottom-style:solid">
+               <img src="logo_final.png" alt="logo" width="285px" height="85px">
+               <div class="heading">
+                  <div style="width:fit-content;margin-left: 150px;margin-top:60px;">
+                     <a href="main.html" class="navbar"><b>Home</b></a>
+                     <a href="physicalhealth_new.html" class="navbar" id="nav1" style="width:max-content">Physical Health</a>
+                     <a href="mentalhealth.html" class="navbar" id="nav2" style="width:max-content">Mental Health</a>
+                     <a href="aboutus.html" class="navbar" id="nav3" style="width:max-content">About Us</a>
+                     <a href="contactus.html" class="navbar" id="nav4" style="width:max-content">Contact Us</a>
+                  </div>
+      
+               </div>
             </div>
-        </div>
-    </div>
+         </header>
+
+         <h1 style="margin-top:100px;margin-left:10px">MENTAL HEALTH</h1>
             <div style="height:100%;margin-top:10%;"> <!--full-->
     <div style="display:flex;flex-direction: row; height:50%;margin-top: 30px;"><!--row1-->
         <div style="width:45%;margin-left: 50px;"><!--col1-->
@@ -103,19 +112,19 @@
         </div>
         <div style="width:45%;margin-left: 20px;"><!--col2-->
             <div align="center" style="padding:100px;border-radius: 80px;font-size: 100px;background-image: url('vid.jpg');background-size: cover;">
-                <a class="anc" href="">VIDEOS</a>
+                <a class="anc" href="videos.html">VIDEOS</a>
             </div>
         </div>
     </div>
     <div style="display:flex;flex-direction: row;height:50%;"><!--row2-->
         <div style="width:45%;margin-left: 50px;"><!--col1-->
             <div align="center" style="padding:100px;padding-left:90px;border-radius: 80px;font-size: 80px;background-image: url('third.jpg');background-size: cover;">
-                <a class="anc" href="">DISORDERS</a>
+                <a class="anc" href="disorder.html">DISORDERS</a>
             </div>
         </div>
         <div style="width:45%;margin-left: 20px;"><!--col2-->
             <div align="center" style="padding:100px;border-radius: 80px;font-size: 80px;background-image: url('self.jpg');background-size: cover;color:black;"> 
-                <a class="anc" href="https://www.youtube.com" style="color:black;">SELF LOVE</a>
+                <a class="anc" href="selflove.html" style="color:black;">SELF LOVE</a>
             </div>
         </div>
     </div>
